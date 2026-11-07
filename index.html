@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta name="description" content="KinZero, tempat menemukan langganan digital untuk hiburan, musik, dan kreativitas. Pilih produk dan order melalui bot Telegram.">
+  <title>KinZero — Digital simpel. Hidup lebih seru.</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+    :root{--paper:#f6f7f2;--ink:#192c26;--muted:#647269;--line:#dce1d5;--green:#d5ef92;--dark:#243e32;--white:#fff;--radius:24px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.6}a{color:inherit;text-decoration:none}button,a,summary{-webkit-tap-highlight-color:transparent}a:focus-visible,summary:focus-visible{outline:3px solid #658d32;outline-offset:6px}svg{display:block}h1,h2,h3,p{margin:0}h1,h2,h3,.brand{font-family:Manrope,sans-serif}main,.nav-inner,.footer-inner{max-width:1160px;margin:auto;padding-inline:32px}.navbar{border-bottom:1px solid var(--line)}.nav-inner{height:92px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:26px;font-weight:800;letter-spacing:-1.3px;display:inline-flex;align-items:center;gap:10px}.brand-icon{width:30px;height:30px;background:var(--ink);color:var(--green);display:grid;place-items:center;border-radius:9px;font-size:23px;line-height:1}.brand em{font-style:normal;color:#7c9653}nav{display:flex;gap:32px;font-size:13px;font-weight:500}nav a:hover{color:#63842f}.nav-note{font-size:11px;display:flex;align-items:center;gap:8px;color:var(--muted)}.dot{width:6px;height:6px;border-radius:50%;background:#75a04a;display:inline-block}.hero{display:grid;grid-template-columns:1.08fr 1fr;gap:48px;align-items:center;padding-block:76px 66px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;display:flex;align-items:center;gap:9px}.eyebrow.pill{display:inline-flex;background:#eaf0df;border:1px solid #dce6ce;padding:7px 12px;border-radius:99px;letter-spacing:1px}h1{font-size:clamp(40px,4.8vw,60px);font-weight:800;line-height:1.12;letter-spacing:-3px;margin:22px 0}h1 span{color:#7a9250}.hero-copy>p{font-size:15px;max-width:365px;color:var(--muted);line-height:1.8}.button{display:inline-flex;align-items:center;justify-content:center;gap:24px;border-radius:10px;padding:14px 20px;font-size:13px;font-weight:700;transition:background .2s,transform .2s}.button:hover{transform:translateY(-2px)}.button.primary{background:var(--ink);color:var(--white);margin-top:28px}.button.primary:hover{background:#365441}.arrow{font-size:19px;line-height:1}.hero-caption{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);margin-top:18px}.check{color:#6f8c42;font-weight:700}.hero-art{height:370px;position:relative;border-radius:32px;background:#e8eedc;overflow:hidden;display:flex;justify-content:center;align-items:center}.orbit{position:absolute;width:350px;height:350px;border:1px solid #d4dec4;border-radius:50%;transform:rotate(-25deg)}.orbit:after{content:'';position:absolute;inset:35px;border:1px solid #d4dec4;border-radius:50%}.art-label{position:absolute;top:25px;left:25px;font-size:9px;letter-spacing:1.8px;color:#718262}.spark{position:absolute;right:32px;top:43px;color:#8aa357;font-size:40px}.art-bottom{position:absolute;bottom:20px;font-size:9px;letter-spacing:2px;color:#718262}.stack{width:237px;height:260px;position:relative;transform:rotate(-8deg)}.app-tile{position:absolute;display:flex;align-items:center;justify-content:space-between;width:237px;height:96px;border:1px solid #ffffff3d;border-radius:17px;box-shadow:0 14px 30px #1c32201a;padding:22px 23px}.app-tile small{font-size:8px;letter-spacing:1.5px;opacity:.6}.tile-netflix{top:0;left:-20px;background:#202820;color:#fff;transform:rotate(-5deg)}.tile-netflix strong{color:#ff5055;font-family:Manrope,sans-serif;font-size:25px;letter-spacing:-1px}.tile-spotify{top:82px;left:17px;background:var(--green);color:var(--ink);transform:rotate(8deg)}.tile-spotify strong{display:flex;gap:9px;align-items:center;font-size:21px;letter-spacing:-1px}.tile-canva{top:164px;left:-9px;background:#fff;color:var(--ink);transform:rotate(-2deg)}.tile-canva strong{font-size:34px;font-family:Georgia,serif;font-style:italic;letter-spacing:-2px}.floating-badge{position:absolute;right:18px;bottom:57px;background:var(--white);padding:11px 14px;border-radius:11px;box-shadow:0 6px 25px #1c322010;font-size:10px;display:flex;align-items:center;gap:8px;transform:rotate(5deg)}.badge-symbol{background:#edf5df;border-radius:50%;width:25px;height:25px;display:grid;place-items:center;color:#6b8b37}.benefits{border-block:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;padding:20px 0;color:var(--muted);font-size:11px}.benefits span{display:flex;align-items:center;gap:10px}.benefits b{color:var(--ink);font-weight:500}.mini-icon{font-size:17px;color:#6c8253}.products{padding-block:64px}.section-heading{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:26px}h2{font-size:30px;line-height:1.3;letter-spacing:-1.2px;margin-top:10px}.section-heading>p{color:var(--muted);font-size:12px;max-width:240px}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:25px;display:flex;flex-direction:column}.product-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:23px}.product-logo{height:48px;width:48px;border-radius:13px;display:grid;place-items:center}.netflix-logo{background:#fff0ef;color:#dc373e;font-size:31px;font-weight:800;font-family:Manrope,sans-serif}.spotify-logo{background:#ebf6df;color:#416b27}.canva-logo{background:#eeebfa;color:#7b61ae;font:italic 36px Georgia,serif}.category{font-size:9px;color:var(--muted);border:1px solid var(--line);padding:4px 10px;border-radius:99px}.product h3{font-size:21px;letter-spacing:-.7px}.product p{font-size:12px;color:var(--muted);margin-top:8px;min-height:40px}.price{border-top:1px solid #edf0e8;margin-top:22px;padding-top:18px}.price small{display:block;color:var(--muted);font-size:10px}.price strong{font-size:26px;font-family:Manrope,sans-serif;letter-spacing:-1px}.price span{font-size:11px;color:var(--muted)}.product .button{margin-top:17px;background:var(--paper);border:1px solid var(--line);justify-content:space-between;padding:11px 15px}.product .button:hover{background:var(--green)}.product.featured{border-color:#a8bc88}.product.featured .button{background:var(--green);border-color:var(--green)}.product.featured .button:hover{background:#c5e27e}.price-note{font-size:10px;color:var(--muted);margin-top:15px;text-align:center}.order-section{background:var(--dark);color:#fff;border-radius:28px;padding:37px 38px 40px;display:grid;grid-template-columns:.85fr 2fr;gap:45px}.order-section .eyebrow{color:var(--green)}.order-section h2{font-size:27px}.order-section>div>p{font-size:12px;color:#bdc9ba;margin-top:12px;max-width:180px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;padding-top:7px}.step-number{display:flex;align-items:center;gap:14px;margin-bottom:22px;color:var(--green);font-size:12px}.step-number:after{content:'';height:1px;flex:1;background:#ffffff26}.steps h3{font-size:14px;font-weight:600}.steps p{color:#bdc9ba;font-size:11px;margin-top:9px;line-height:1.8}.faq{padding-block:65px;display:grid;grid-template-columns:1fr 1.35fr;gap:60px}.faq-intro p{font-size:12px;color:var(--muted);margin-top:12px}.faq-intro a{text-decoration:underline;text-underline-offset:3px}details{border-bottom:1px solid var(--line);padding:17px 0}details:first-child{padding-top:0}summary{font-weight:500;font-size:13px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:18px}summary::-webkit-details-marker{display:none}summary:after{content:'+';font-size:18px;font-weight:400;line-height:1.3}details[open] summary:after{content:'−'}details p{font-size:12px;color:var(--muted);margin-top:12px;max-width:400px}footer{border-top:1px solid var(--line)}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:24px}.footer-inner .brand{font-size:21px}.footer-inner .brand-icon{height:25px;width:25px;font-size:19px}.footer-inner p,.footer-inner>a:last-child{font-size:10px;color:var(--muted)}
+    @media(min-width:1500px){.hero{padding-block:90px}.hero-art{height:400px}}
+    @media(max-width:800px){.nav-note{display:none}.hero{gap:25px;padding-block:50px}h1{font-size:44px;letter-spacing:-2px}.hero-art{height:340px}.app-tile{width:210px}.stack{width:210px}.floating-badge{right:8px;font-size:9px}.benefits{flex-wrap:wrap;justify-content:center;gap:15px 30px}.product{padding:20px}.order-section{grid-template-columns:1fr;gap:24px}.order-section>div>p{max-width:none}.faq{gap:35px}}
+    @media(max-width:600px){main,.nav-inner,.footer-inner{padding-inline:22px}.nav-inner{height:77px;gap:15px}.brand{font-size:24px}nav{gap:16px;font-size:11px}.brand-icon{width:26px;height:26px}.hero{grid-template-columns:1fr;padding-block:38px 30px;gap:32px}.hero-copy>p{max-width:330px}.hero h1{font-size:48px;max-width:350px}.hero-art{height:330px}.hero-caption{font-size:10px}.benefits{justify-content:flex-start;gap:10px 20px;padding-block:17px;font-size:10px}.benefits span:last-child{display:none}.products{padding-block:42px}.section-heading{display:block}.section-heading>p{margin-top:12px;max-width:none}h2{font-size:27px}.product-grid{grid-template-columns:1fr;gap:15px}.product{padding:23px}.product p{min-height:0}.product-top{margin-bottom:16px}.price{margin-top:18px}.order-section{padding:28px 25px;border-radius:22px}.steps{grid-template-columns:1fr;gap:23px}.step{position:relative;padding-left:38px}.step-number{position:absolute;left:0;top:0;margin:0}.step-number:after{display:none}.steps p{margin-top:5px}.faq{padding-block:43px;grid-template-columns:1fr;gap:28px}.footer-inner{flex-wrap:wrap;padding-block:23px;gap:15px}.footer-inner>a:last-child{display:none}.footer-inner p{font-size:10px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}.button:hover{transform:none}}
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="#" aria-label="KinZero, beranda"><span class="brand-icon" aria-hidden="true">↗</span><span>Kin<em>Zero</em></span></a>
+      <nav aria-label="Navigasi utama"><a href="#produk">Produk</a><a href="#cara-order">Cara Order</a><a href="#faq">FAQ</a></nav>
+      <span class="nav-note"><span class="dot"></span> Semua kebutuhan digitalmu</span>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow pill"><span class="dot"></span> Tempat favorit digitalmu</div>
+        <h1 id="hero-title">Digital simpel.<br>Hidup lebih <span>seru.</span></h1>
+        <p>Temukan langganan digital favoritmu untuk nonton, dengerin musik, dan berkarya — semua di KinZero.</p>
+        <a class="button primary" href="https://t.me/KinZeroStore_Bot">Order Sekarang <span class="arrow" aria-hidden="true">↗</span></a>
+        <div class="hero-caption"><span class="check" aria-hidden="true">✓</span> Pilih produk. Order via Telegram. Beres.</div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Netflix, Spotify, dan Canva: hiburan dan kreativitas dalam satu tempat">
+        <span class="art-label">UPGRADE KECIL, KEMUNGKINAN BESAR.</span><div class="orbit"></div><span class="spark">✳</span>
+        <div class="stack">
+          <div class="app-tile tile-netflix"><strong>NETFLIX</strong><small>TONTON.</small></div>
+          <div class="app-tile tile-spotify"><strong><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="currentColor"/><path d="M7 12q10-4 19 1M8 17q9-3 16 1M10 22q7-2 12 1" fill="none" stroke="#d5ef92" stroke-width="2.4" stroke-linecap="round"/></svg>Spotify</strong><small>DENGAR.</small></div>
+          <div class="app-tile tile-canva"><strong>Canva</strong><small>KARYA.</small></div>
+        </div>
+        <div class="floating-badge"><span class="badge-symbol">✦</span> Satu tempat, banyak kemungkinan.</div><span class="art-bottom">DIPILIH UNTUK KESEHARIANMU.</span>
+      </div>
+    </section>
+    <div class="benefits" aria-label="Keunggulan KinZero">
+      <span><span class="mini-icon" aria-hidden="true">✦</span><b>Produk digital pilihan</b></span>
+      <span><span class="mini-icon" aria-hidden="true">↗</span><b>Order praktis via Telegram</b></span>
+      <span><span class="mini-icon" aria-hidden="true">◎</span><b>Untuk keseharian yang lebih seru</b></span>
+    </div>
+    <section class="products" id="produk" aria-labelledby="products-title">
+      <div class="section-heading"><div><div class="eyebrow">PILIHAN DIGITALMU</div><h2 id="products-title">Favoritmu, ada di sini.</h2></div><p>Dari me time sampai ide besar.<br>Pilih yang paling kamu butuhkan.</p></div>
+      <div class="product-grid">
+        <article class="product">
+          <div class="product-top"><span class="product-logo netflix-logo" aria-hidden="true">N</span><span class="category">Hiburan</span></div>
+          <h3>Netflix</h3><p>Film, serial, dan cerita baru untuk waktu santaimu.</p>
+          <div class="price"><small>Harga placeholder</small><strong>Rp XX.XXX</strong><span> / paket</span></div>
+          <a class="button" href="https://t.me/KinZeroStore_Bot" aria-label="Order Netflix">Order <span class="arrow" aria-hidden="true">↗</span></a>
+        </article>
+        <article class="product featured">
+          <div class="product-top"><span class="product-logo spotify-logo" aria-hidden="true"><svg width="31" height="31" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="currentColor"/><path d="M7 12q10-4 19 1M8 17q9-3 16 1M10 22q7-2 12 1" fill="none" stroke="#ebf6df" stroke-width="2.3" stroke-linecap="round"/></svg></span><span class="category">Musik</span></div>
+          <h3>Spotify</h3><p>Playlist favorit untuk menemani setiap mood kamu.</p>
+          <div class="price"><small>Harga placeholder</small><strong>Rp XX.XXX</strong><span> / paket</span></div>
+          <a class="button" href="https://t.me/KinZeroStore_Bot" aria-label="Order Spotify">Order <span class="arrow" aria-hidden="true">↗</span></a>
+        </article>
+        <article class="product">
+          <div class="product-top"><span class="product-logo canva-logo" aria-hidden="true">C</span><span class="category">Kreativitas</span></div>
+          <h3>Canva</h3><p>Bawa ide jadi karya, dari konten sampai presentasi.</p>
+          <div class="price"><small>Harga placeholder</small><strong>Rp XX.XXX</strong><span> / paket</span></div>
+          <a class="button" href="https://t.me/KinZeroStore_Bot" aria-label="Order Canva">Order <span class="arrow" aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <p class="price-note">Harga di atas adalah placeholder. Cek harga, pilihan paket, dan ketersediaan terbaru di bot Telegram.</p>
+    </section>
+    <section class="order-section" id="cara-order" aria-labelledby="order-title">
+      <div><div class="eyebrow">NGGAK PAKAI RIBET</div><h2 id="order-title">Tiga langkah.<br>Langsung beres.</h2><p>Semua proses order dilakukan melalui bot Telegram KinZero.</p></div>
+      <div class="steps">
+        <div class="step"><span class="step-number">01</span><h3>Pilih produk</h3><p>Buka bot Telegram, lalu pilih produk dan paket yang kamu mau.</p></div>
+        <div class="step"><span class="step-number">02</span><h3>Bayar</h3><p>Cek detail pesanan dan ikuti instruksi pembayaran di bot.</p></div>
+        <div class="step"><span class="step-number">03</span><h3>Akun dikirim</h3><p>Setelah pembayaran terkonfirmasi, detail akun dikirim melalui Telegram.</p></div>
+      </div>
+    </section>
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="faq-intro"><div class="eyebrow">INFO UNTUKMU</div><h2 id="faq-title">Masih penasaran?</h2><p>Temukan info selengkapnya di <a href="https://t.me/KinZeroStore_Bot">bot Telegram kami ↗</a></p></div>
+      <div>
+        <details><summary>Bagaimana cara order di KinZero?</summary><p>Klik tombol “Order Sekarang” atau “Order” pada produk. Kamu akan diarahkan ke bot Telegram untuk memilih paket dan melanjutkan pembayaran.</p></details>
+        <details><summary>Di mana saya bisa melihat harga terbaru?</summary><p>Harga pada halaman ini masih berupa placeholder. Lihat harga dan ketersediaan paket terbaru langsung di bot Telegram sebelum membayar.</p></details>
+        <details><summary>Bagaimana akun saya dikirim?</summary><p>Detail akun dikirim melalui Telegram setelah pembayaran terkonfirmasi. Ikuti informasi dan instruksi pada bot untuk pesananmu.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer><div class="footer-inner"><a class="brand" href="#" aria-label="KinZero, kembali ke atas"><span class="brand-icon" aria-hidden="true">↗</span><span>Kin<em>Zero</em></span></a><p>© 2026 KinZero</p><a href="https://t.me/KinZeroStore_Bot">Temukan kami di Telegram ↗</a></div></footer>
+</body>
+</html>
